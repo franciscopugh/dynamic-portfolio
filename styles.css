@@ -6,7 +6,7 @@
 
 body {
     background: WHEAT;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Merienda One', cursive;
 }
 
 a {
@@ -30,10 +30,14 @@ header .logo {
 
 header .logo p{
     color: #FF5733;
+    font-family: 'Indie Flower', cursive;
+    font-size: 25px;
 }
 
 header .logo h1{
     color: crimson;
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
 }
 
 header form {
@@ -54,4 +58,21 @@ header .search-bar {
         border:none;
         text-align: center;
         font-size: 16px;
+}
+
+header .categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header .categories a {
+    color: coral;
+    margin: 10px 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+header .categories a.active {
+    color:firebrick;
 }
