@@ -5,7 +5,7 @@
 }
 
 body {
-    background: whitesmoke;
+    background: WHEAT;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -17,4 +17,41 @@ a {
     width: 90%;
     max-width: 1100px;
     margin:auto;
+}
+
+header{
+    padding:40px 0;
+}
+
+header .logo {
+    text-align: center;
+    margin-bottom: 40px; 
+}
+
+header .logo p{
+    color: #FF5733;
+}
+
+header .logo h1{
+    color: crimson;
+}
+
+header form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+header .search-bar {
+        width: 70%;
+        height: 40px;
+        line-height: 40px;
+        background: floralwhite;
+        padding: 0 20px;
+        border-radius: 100px;
+        border:none;
+        text-align: center;
+        font-size: 16px;
 }
