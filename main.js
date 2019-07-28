@@ -3,3 +3,7 @@ const grid = new Nuuri('.grid', {
         rounding: false
     }
 });
+
+window.addEventListener('load', () => {
+    document.getElementById('grid').classList.add('uploaded_img')
+});

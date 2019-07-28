@@ -76,3 +76,33 @@ header .categories a {
 header .categories a.active {
     color:firebrick;
 }
+
+.grid {
+	position: relative;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s linear ls;
+}
+
+.grid.uploaded_img{
+    opacity: 1;
+
+}
+
+.grid .item {
+	position: absolute;
+	display: block;
+	padding: 0;
+	margin: 10px;
+	width: calc(33.33333% - 20px);
+}
+
+.grid .item-cont {
+    position: relative;
+}
+
+.grid .item img {
+    width: 100%;
+    cursor: pointer;
+    vertical-align: top;
+}
