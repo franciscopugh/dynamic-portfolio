@@ -19,6 +19,8 @@ a {
     margin:auto;
 }
 
+/* HEADER */
+
 header{
     padding:40px 0;
 }
@@ -51,7 +53,7 @@ header form {
 header .search-bar {
         width: 70%;
         height: 40px;
-        line-height: 40px;
+        line-height: 20px;
         background: floralwhite;
         padding: 0 20px;
         border-radius: 100px;
@@ -77,31 +79,32 @@ header .categories a.active {
     color:firebrick;
 }
 
-.grid {
-	position: relative;
+/* GRID */
+
+.grid{
+    position: relative;
     width: 100%;
     opacity: 0;
-    transition: opacity 0.5s linear ls;
+    transition: opacity 0.5s linear 1s;
 }
 
-.grid.uploaded_img{
+.grid.uploaded-img{
     opacity: 1;
-
 }
 
-.grid .item {
-	position: absolute;
-	display: block;
-	padding: 0;
-	margin: 10px;
-	width: calc(33.33333% - 20px);
+.grid .item{
+    position: absolute;
+    display: block;
+    padding: 0;
+    margin: 10px;
+    width: calc(33.333333% - 20px);
 }
 
-.grid .item-cont {
+.grid .item-cont{
     position: relative;
 }
 
-.grid .item img {
+.grid .item img{
     width: 100%;
     cursor: pointer;
     vertical-align: top;
