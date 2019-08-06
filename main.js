@@ -8,7 +8,7 @@ window.addEventListener('load', () => {
     grid.refreshItems().layout();
     document.getElementById('grid').classList.add('uploaded-img');
 
-    //Listener de los enlaces
+    // Listener de los enlaces
 
     const links = document.querySelectorAll('#categories a');
     links.forEach((e) => {
@@ -22,10 +22,26 @@ window.addEventListener('load', () => {
         });
     });
 
-    //Listener de la barra de busqueda
+    // Listener de la barra de busqueda
 
     document.querySelector('#search-id').addEventListener('input', (e) => {
         const search = e.target.value;
         grid.filter((item) => item.getElement().dataset.label.includes(search))
     });
+
+    // Listener para las imagenes
+
+    const overlay = document.getElementById('overlay');
+    document.querySelectorAll('.grid .item img').forEach( (e) => {
+        const route = e.getAttribute('src');
+        const description = e.parentNode.parentNode.dataset.description;
+        
+        e.addEventListener('click', () => {
+            overlay.classList.add('active');
+            document.querySelector('#overlay img').src = route;
+            document.querySelector('#overlay .description').innerHTML = description;
+        });
+    });
+
+    
 });
