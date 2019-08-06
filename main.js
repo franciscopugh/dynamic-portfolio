@@ -43,5 +43,14 @@ window.addEventListener('load', () => {
         });
     });
 
+    // EventListener del boton
     
+    document.querySelector('#btn-close-popup').addEventListener('click', () => {
+        overlay.classList.remove('active');
+    });
+
+    // EvenListener del Overlay
+    overlay.addEventListener('click', (event) => {
+        event.target.id === 'overlay'? overlay.classList.remove('active') : '';
+    });
 });
